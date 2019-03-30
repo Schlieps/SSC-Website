@@ -37,19 +37,6 @@ and (max-device-width : 1024px)  {
 @media handheld, only screen and (max-width: 668px) {
      .spring-banner,.charity-banner,.winter-banner,.summer-banner,.item-1,.item-2,.item-3,.fade-background { background-attachment: scroll !important; }
 }
-/*PRELOADER*/
-.preloader{
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background:var(--mainWhite);
-    z-index:1100;
-}
-.hidePreloader{
-    display:none!important;
-}
 /*BODY*/
 body{
     font-family: 'Conv_Gotham-Book', Sans-Serif;
