@@ -255,7 +255,7 @@ hr{
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .item-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/feature2.jpg)center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingBanner.jpg)center/cover fixed no-repeat;
 }
 .item-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingGOT.jpg) center/cover fixed no-repeat;
@@ -423,7 +423,7 @@ hr{
 				 8px 20px 30px rgba(239,123,45,0.1);
 }
 .summer-banner{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/summerBackground.JPG)center/cover fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/summerBackground.jpg)center/cover fixed no-repeat;
     min-height: 55vh;
     display:flex;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
