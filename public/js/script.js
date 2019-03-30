@@ -1,10 +1,6 @@
 // preloader
     window.addEventListener('load', () => document.querySelector('.preloader').classList.add('hidePreloader'));
 
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
-
 $(document).ready(function(){
     
   //navbar toggler
