@@ -67,21 +67,21 @@ body{
     font-size: 7vw;
 }
 .winter-font{
-    font-family: 'Loved by the King', cursive;
+    font-family: 'Loved by the King', Sans-Serif;
     font-size: 12vw;
     font-weight: bold;
 }
 .charity-font{
     font-size: 11vw;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', Sans-Serif;
 }
 .summer-font{
     font-size: 8vw;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', Sans-Serif;
 }
 .spring-font{
     font-size: 8vw;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', Sans-Serif;
 }
 .neutratext{
     font-family: 'Conv_Neutra-Text-Light-Alt-Demi_32113', Sans-Serif;;
@@ -139,6 +139,18 @@ body{
     position: absolute;
     background: url("//i.imgur.com/TxzC70f.png") no-repeat;
     cursor: pointer;
+}
+/*BACKGROUND IMAGES*/
+.item-1,
+.item-2,
+.item-3,
+.fade-background,
+.winter-banner,
+.charity-banner,
+.summer-banner,
+.spring-banner {
+  min-height: 70vh;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 /*NAVBAR SECTION*/
 .navbar-initial{
@@ -254,12 +266,6 @@ body{
   transform: translateY(-7px);
 }
 /*UPCOMING SECTION*/
-.item-1,
-.item-2,
-.item-3 {
-  min-height: 60vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
-}
 .webp .item-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingBanner.webp)center/cover fixed no-repeat;
 }
@@ -353,15 +359,11 @@ body{
 }
 .webp .winter-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/winterBackground.webp)center/cover fixed no-repeat;
-    min-height: 60vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .no-webp .winter-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/winterBackground.jpg)center/cover fixed no-repeat;
-    min-height: 60vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .text-shadow-blue{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -415,15 +417,11 @@ body{
 }
 .webp .charity-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/charityBackground.webp)center/cover fixed no-repeat;
-    min-height: 55vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .no-webp .charity-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/charityBackground.jpg)center/cover fixed no-repeat;
-    min-height: 55vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .charity-underline{
     width:8rem;
@@ -443,15 +441,11 @@ body{
 }
 .webp .summer-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/summerBackground.webp)center/cover fixed no-repeat;
-    min-height: 55vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .no-webp .summer-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/summerBackground.jpg)center/cover fixed no-repeat;
-    min-height: 55vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .summer-underline{
     width:8rem;
@@ -475,15 +469,11 @@ body{
 }
 .webp .spring-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/springBackground.webp)center/cover fixed no-repeat;
-    min-height: 55vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .no-webp .spring-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/springBackground.jpg)center/cover fixed no-repeat;
-    min-height: 55vh;
     display:flex;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .spring-underline{
     width:8rem;
@@ -494,11 +484,9 @@ body{
 /*HOLIDAY MIXER SECTION*/
 .webp .fade-background{
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/holidayMixerBG.webp)center/cover fixed no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 .no-webp .fade-background{
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/holidayMixerBG.jpg)center/cover fixed no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 /*TEAM SECTION*/
 .team-title-underline{
