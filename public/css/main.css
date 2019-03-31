@@ -89,19 +89,56 @@ body{
 .nowrap{
     white-space: nowrap;
 }
-/*VIDEOS*/
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0;
+/*YOUTUBE VIDEOS*/
+.youtube-player {
+    position: relative;
+    padding-bottom: 56.23%;
+    /* Use 75% for 4:3 videos */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #070707;
+    margin: 5px;
 }
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+.youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+.youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+    cursor: pointer;
 }
 /*NAVBAR SECTION*/
 .navbar-initial{
@@ -223,11 +260,17 @@ body{
   min-height: 60vh;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
-.item-1 {
+.webp .item-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingBanner.webp)center/cover fixed no-repeat;
 }
-.item-2 {
+.no-webp .item-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingBanner.jpg)center/cover fixed no-repeat;
+}
+.webp .item-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingGOT.webp) center/cover fixed no-repeat;
+}
+.no-webp .item-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingGOT.jpg) center/cover fixed no-repeat;
 }
 .no-padding {
   padding: 0;
@@ -308,8 +351,14 @@ body{
 .event-date{
     font-size:5vw;
 }
-.winter-banner{
+.webp .winter-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/winterBackground.webp)center/cover fixed no-repeat;
+    min-height: 60vh;
+    display:flex;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+.no-webp .winter-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/winterBackground.jpg)center/cover fixed no-repeat;
     min-height: 60vh;
     display:flex;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
@@ -364,8 +413,14 @@ body{
 				 6px 14px 24px rgba(211,180,2,0.3),
 				 8px 20px 30px rgba(211,180,2,0.1);
 }
-.charity-banner{
+.webp .charity-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/charityBackground.webp)center/cover fixed no-repeat;
+    min-height: 55vh;
+    display:flex;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+.no-webp .charity-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/charityBackground.jpg)center/cover fixed no-repeat;
     min-height: 55vh;
     display:flex;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
@@ -386,8 +441,14 @@ body{
 				 6px 14px 24px rgba(239,123,45,0.3),
 				 8px 20px 30px rgba(239,123,45,0.1);
 }
-.summer-banner{
+.webp .summer-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/summerBackground.webp)center/cover fixed no-repeat;
+    min-height: 55vh;
+    display:flex;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+.no-webp .summer-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/summerBackground.jpg)center/cover fixed no-repeat;
     min-height: 55vh;
     display:flex;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
@@ -412,8 +473,14 @@ body{
 				 6px 14px 24px rgba(139,58,252,0.3),
 				 8px 20px 30px rgba(139,58,252,0.1);
 }
-.spring-banner{
+.webp .spring-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/springBackground.webp)center/cover fixed no-repeat;
+    min-height: 55vh;
+    display:flex;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+.no-webp .spring-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/springBackground.jpg)center/cover fixed no-repeat;
     min-height: 55vh;
     display:flex;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
@@ -425,8 +492,12 @@ body{
     float:left;
 }
 /*HOLIDAY MIXER SECTION*/
-.fade-background{
+.webp .fade-background{
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/holidayMixerBG.webp)center/cover fixed no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+.no-webp .fade-background{
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/holidayMixerBG.jpg)center/cover fixed no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
 /*TEAM SECTION*/

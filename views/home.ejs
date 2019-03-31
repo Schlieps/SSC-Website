@@ -83,10 +83,18 @@
           <!--images-->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/feature1.webp" alt="carousel picture" class="d-block w-100 carousel-img">
+                <picture>
+                  <source srcset="img/feature1.webp" type="image/webp" class="d-block w-100 carousel-img">
+                  <source srcset="img/feature1.jpg" type="image/jpeg" class="d-block w-100 carousel-img"> 
+                  <img src="img/feature1.jpg" alt="carousel picture" class="d-block w-100 carousel-img">
+                </picture>
             </div>
             <div class="carousel-item">
-              <img src="img/picHomeSmart.webp" alt="carousel picture" class="d-block w-100 carousel-img">
+                <picture>
+                  <source srcset="img/picHomeSmart.webp" type="image/webp" class="d-block w-100 carousel-img">
+                  <source srcset="img/picHomeSmart.jpg" type="image/jpeg" class="d-block w-100 carousel-img"> 
+                  <img src="img/picHomeSmart.jpg" alt="carousel picture" class="d-block w-100 carousel-img">
+                </picture>
             </div>
           </div>
           <!--end of images-->
@@ -121,9 +129,7 @@
     </div>
     <div class="row">
         <div class="col-10 mx-auto col-lg-6 my-3">
-           <div class="videoWrapper">
-               <iframe width="780" height="439" src="https://www.youtube.com/embed/7KbMC7nnlj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+           <div class="youtube-player" data-id="7KbMC7nnlj8"></div>
         </div>
         <div class="col-10 mx-auto col-lg-3 my-3">
             <h1>Artists</h1>
@@ -132,7 +138,11 @@
         </div>
         <div class="col-10 mx-auto col-lg-3 my-3">
             <div class="event-photo-container">
-               <img src="img/winterGallery.webp" alt="photo" class="img-fluid circle-photo event-photo-img">
+                <picture>
+                  <source srcset="img/winterGallery.webp" type="image/webp" class="img-fluid circle-photo event-photo-img">
+                  <source srcset="img/winterGallery.jpg" type="image/jpeg" class="img-fluid circle-photo event-photo-img"> 
+                  <img src="img/winterGallery.jpg" alt="photo" class="img-fluid circle-photo event-photo-img">
+                </picture>
                <a href="https://www.facebook.com/media/set/?set=a.582389468902418&type=1&l=928093f2dd">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">gallery</h3>
                </a>
@@ -146,7 +156,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/winterDJ.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/winterDJ.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/winterDJ.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/winterDJ.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="http://www.diamondheights.org/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">diamond heights</h3>
                </a>
@@ -156,7 +170,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/winterPig.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/winterPig.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/winterPig.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/winterPig.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">Whistle Pig</h3>
                </a>
@@ -166,7 +184,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/winterArtist.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/winterArtist.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/winterArtist.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/winterArtist.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">Shawn McClure</h3>
                </a>
@@ -176,7 +198,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/winterSinger.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/winterSinger.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/winterSinger.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/winterSinger.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="https://www.instagram.com/iriskymm">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">Iris Kymm</h3>
                </a>
@@ -200,7 +226,11 @@
            <div class="photo-container">
                <img src="img/logoHomeSmart.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picHomeSmart.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picHomeSmart.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picHomeSmart.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picHomeSmart.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -210,7 +240,11 @@
            <div class="photo-container">
                <img src="img/logoSebis.png" alt="photo" class="img-fluid photo-img">
                <a href="http://sebisbistro.com/onlinemenu">
-                   <img src="img/picSebis.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picSebis.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picSebis.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picSebis.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -220,7 +254,11 @@
            <div class="photo-container">
                <img src="img/logoYum.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picYum.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picYum.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picYum.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picYum.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -230,7 +268,11 @@
            <div class="photo-container">
                <img src="img/logoBuchaBelly.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picBuchaBelly.webp" class="img-fluid photo-link">
+                    <picture>
+                      <source srcset="img/picBuchaBelly.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picBuchaBelly.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picBuchaBelly.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -240,7 +282,11 @@
            <div class="photo-container">
                <img src="img/logoWhistlePig.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picWhistlePig.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picWhistlePig.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picWhistlePig.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picWhistlePig.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -258,9 +304,7 @@
     </div>
     <div class="row">
         <div class="col-10 mx-auto col-lg-6 my-3">
-           <div class="videoWrapper">
-               <iframe width="780" height="439" src="https://www.youtube.com/embed/YdE2P0LK1G0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+           <div class="youtube-player" data-id="YdE2P0LK1G0"></div>
         </div>
         <div class="col-10 mx-auto col-lg-3 my-3">
             <h1>Charitable Gala</h1>
@@ -269,7 +313,11 @@
         </div>
         <div class="col-10 mx-auto col-lg-3 my-3">
             <div class="event-photo-container">
-               <img src="img/charityGallery.webp" alt="photo" class="img-fluid circle-photo event-photo-img">
+                <picture>
+                  <source srcset="img/charityGallery.webp" type="image/webp" class="img-fluid circle-photo event-photo-img">
+                  <source srcset="img/charityGallery.jpg" type="image/jpeg" class="img-fluid circle-photo event-photo-img"> 
+                  <img src="img/charityGallery.jpg" alt="photo" class="img-fluid circle-photo event-photo-img">
+                </picture>
                <a href="https://www.facebook.com/media/set/?set=a.582389468902418&type=1&l=928093f2dd">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">gallery</h3>
                </a>
@@ -283,7 +331,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/charityArt.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/charityArt.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/charityArt.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/charityArt.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">artwork</h3>
                </a>
@@ -293,7 +345,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/charityDJ.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/charityDJ.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/charityDJ.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/charityDJ.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">Musician</h3>
                </a>
@@ -303,7 +359,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/charityPerformer.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/charityPerformer.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/charityPerformer.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/charityPerformer.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">Performer</h3>
                </a>
@@ -313,7 +373,11 @@
        <!--single photo-->
         <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
            <div class="event-photo-container">
-               <img src="img/charityDancer.webp" alt="photo" class="img-fluid event-photo-img">
+               <picture>
+                  <source srcset="img/charityDancer.webp" type="image/webp" class="img-fluid event-photo-img">
+                  <source srcset="img/charityDancer.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
+                  <img src="img/charityDancer.jpg" alt="photo" class="img-fluid event-photo-img">
+                </picture>
                <a href="/">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">Dancer</h3>
                </a>
@@ -337,7 +401,11 @@
            <div class="photo-container">
                <img src="img/logoEO.png" alt="photo" class="img-fluid photo-img">
                <a href="http://sebisbistro.com/onlinemenu">
-                   <img src="img/picSebis.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picSebis.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picSebis.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picSebis.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -347,7 +415,11 @@
            <div class="photo-container">
                <img src="img/logoLaunchParty.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picHomeSmart.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picSebis.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picSebis.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picSebis.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -357,7 +429,11 @@
            <div class="photo-container">
                <img src="img/logoFC.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picYum.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picSebis.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picSebis.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picSebis.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -367,7 +443,11 @@
            <div class="photo-container">
                <img src="img/logoYPOS.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
-                   <img src="img/picBuchaBelly.webp" class="img-fluid photo-link">
+                   <picture>
+                      <source srcset="img/picSebis.webp" type="image/webp" class="img-fluid photo-link">
+                      <source srcset="img/picSebis.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                      <img src="img/picSebis.jpg" alt="photo" class="img-fluid photo-link">
+                    </picture>
                </a>
            </div>
         </div>
@@ -394,13 +474,21 @@
           <!--images-->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/summerSinger.webp" alt="carousel picture" class="d-block w-100 carousel-img">
+                <picture>
+                  <source srcset="img/summerSinger.webp" type="image/webp" class="d-block w-100 carousel-img">
+                  <source srcset="img/summerSinger.jpg" type="image/jpeg" class="d-block w-100 carousel-img"> 
+                  <img src="img/summerSinger.jpg" alt="carousel picture" class="d-block w-100 carousel-img">
+                </picture>
               <div class="carousel-content text-shadow">
                   <h1 class="display-5">Singer</h1>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/summerDJ.webp" alt="carousel picture" class="d-block w-100 carousel-img">
+                <picture>
+                  <source srcset="img/summerDJ.webp" type="image/webp" class="d-block w-100 carousel-img">
+                  <source srcset="img/summerDJ.jpg" type="image/jpeg" class="d-block w-100 carousel-img"> 
+                  <img src="img/summerDJ.jpg" alt="carousel picture" class="d-block w-100 carousel-img">
+                </picture>
               <div class="carousel-content text-shadow">
                   <h1 class="display-5">Musician</h1>
               </div>
@@ -423,7 +511,11 @@
         </div>
         <div class="col-10 mx-auto col-lg-3 my-3">
             <div class="event-photo-container">
-               <img src="img/summerGallery.webp" alt="photo" class="img-fluid circle-photo event-photo-img">
+                <picture>
+                  <source srcset="img/summerGallery.webp" type="image/webp" class="img-fluid circle-photo event-photo-img">
+                  <source srcset="img/summerGallery.jpg" type="image/jpeg" class="img-fluid circle-photo event-photo-img"> 
+                  <img src="img/summerGallery.jpg" alt="photo" class="img-fluid circle-photo event-photo-img">
+                </picture>
                <a href="https://www.facebook.com/media/set/?set=a.582389468902418&type=1&l=928093f2dd">
                    <h3 class="text-uppercase text-center text-shadow event-photo-link">gallery</h3>
                </a>
@@ -442,9 +534,7 @@
     </div>
     <div class="row">
         <div class="col-10 mx-auto col-md-6 my-3">
-           <div class="videoWrapper">
-               <iframe width="780" height="439" src="https://www.youtube.com/embed/d1mGWgp4uto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+           <div class="youtube-player" data-id="d1mGWgp4uto"></div>
         </div>
         <div class="col-10 mx-auto col-md-6 my-3">
             <h1>Artists</h1>
@@ -464,7 +554,11 @@
             </div>
         </div>
         <div class="col-10 mx-auto col-md-6 pb-5 pt-3">
-            <img src="img/holidayMixer.webp" alt="holiday mixer" class="circle-photo img-fluid">
+            <picture>
+                  <source srcset="img/holidayMixer.webp" type="image/webp" class="img-fluid circle-photo">
+                  <source srcset="img/holidayMixer.jpg" type="image/jpeg" class="img-fluid circle-photo"> 
+                  <img src="img/holidayMixer.jpg" alt="holiday mixer" class="img-fluid circle-photo">
+                </picture>
         </div>
     </div>
 </div>
@@ -483,7 +577,11 @@
       <div class="row">
         <div class="col-lg-3 col-sm-6 my-5">
           <div class="card text-center">
-            <img src="img/teamBartek.webp" width="180" alt="" class="img-fluid rounded-circle mx-auto">
+                <picture>
+                  <source srcset="img/teamBartek.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                  <source srcset="img/teamBartek.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                  <img src="img/teamBartek.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                </picture>
             <div class="card-body">
               <h2 class="neutratext">Bartek Nowierski</h2>
               <h5>Title 1</h5>
@@ -498,7 +596,11 @@
         <!--end of team col-->
         <div class="col-lg-3 col-sm-6 my-5">
           <div class="card text-center">
-            <img src="img/teamJas.webp" width="180" alt="" class="img-fluid rounded-circle mx-auto">
+            <picture>
+                  <source srcset="img/teamJas.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                  <source srcset="img/teamJas.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                  <img src="img/teamJas.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                </picture>
             <div class="card-body">
               <h2 class="neutratext">Jas Banwait</h2>
               <h5>Title 2</h5>
@@ -513,7 +615,11 @@
         <!--end of team col-->
         <div class="col-lg-3 col-sm-6 my-5">
           <div class="card text-center">
-            <img src="img/teamAni.webp" width="180" alt="" class="img-fluid rounded-circle mx-auto">
+            <picture>
+                  <source srcset="img/teamAni.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                  <source srcset="img/teamAni.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                  <img src="img/teamAni.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                </picture>
             <div class="card-body">
               <h2 class="neutratext">Ani Nguyen</h2>
               <h5>Title 3</h5>
@@ -528,7 +634,11 @@
         <!--end of team col-->
         <div class="col-lg-3 col-sm-6 my-5">
           <div class="card text-center">
-            <img src="img/teamVlad.webp" width="180" alt="" class="img-fluid rounded-circle mx-auto">
+            <picture>
+                  <source srcset="img/teamVlad.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                  <source srcset="img/teamVlad.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                  <img src="img/teamVlad.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                </picture>
             <div class="card-body">
               <h2 class="neutratext">Vlad Nehaev</h2>
               <h5>Title 4</h5>
