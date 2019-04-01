@@ -84,6 +84,26 @@ body{
     font-size: 55px;
   }
 }
+@media screen and (min-width: 768px) {
+  .title2 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title3 {
+    font-size: 30px;
+  }
+}
 /*.upcoming-font-size{*/
 /*    font-size: 7vw;*/
 /*}*/
