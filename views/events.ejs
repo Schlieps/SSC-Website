@@ -1,0 +1,119 @@
+<% include ./partials/header %>
+
+<div class="container-fluid">
+    <div class="row past-banner align-items-center">
+        <div class="col-11 mx-auto text-center">
+            <h1 class="header-white text-shadow mb-3">PAST EVENTS</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5">
+    <div class="row">
+       <div class="col-10 mx-auto text-center py-3">
+            <h1 class="display-4 text-uppercase">since 2017</h1>
+           <div class="mb-3"></div>
+           <h4 class="text-muted">All past events since our first party in 2017!</h4>
+       </div>
+    </div>
+</div>
+
+<!--SUMMER SOIREE SECTION-->
+<div class="container-fluid pb-5">
+    <div class="row summer-banner align-items-center">
+        <div class="col-11 mx-auto text-center">
+            <h1 class="header-white text-shadow-red text-uppercase mb-3">farewell to summer </h1>
+            <a href="#" class="btn btn-lg mb-5 banner-btn">GALLERY</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 mx-auto col-lg-6 my-3">
+           <div id="example2" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+          <!--indicators-->
+          <ul class="carousel-indicators">
+            <li data-target="#example2" data-slide-to="0" class="active"></li>
+            <li data-target="#example2" data-slide-to="1"></li>
+          </ul>
+          <!--images-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                  <source srcset="img/summerSinger.webp" type="image/webp" class="d-block w-100 carousel-img">
+                  <source srcset="img/summerSinger.jpg" type="image/jpeg" class="d-block w-100 carousel-img"> 
+                  <img src="img/summerSinger.jpg" alt="carousel picture" class="d-block w-100 carousel-img">
+                </picture>
+              <div class="carousel-content text-shadow">
+                  <h1 class="display-5">Singer</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                  <source srcset="img/summerDJ.webp" type="image/webp" class="d-block w-100 carousel-img">
+                  <source srcset="img/summerDJ.jpg" type="image/jpeg" class="d-block w-100 carousel-img"> 
+                  <img src="img/summerDJ.jpg" alt="carousel picture" class="d-block w-100 carousel-img">
+                </picture>
+              <div class="carousel-content text-shadow">
+                  <h1 class="display-5">Musician</h1>
+              </div>
+            </div>
+          </div>
+          <!--end of images-->
+          <!--controls-->
+          <a href="#example2" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#example2" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        </div>
+        <div class="col-10 mx-auto col-lg-6 my-3">
+            <h1>2018 Summer Soirée</h1>
+            <h4 class="mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+        </div>
+    </div>
+</div>
+
+<!--SPRING FEVER SECTION-->
+<div class="container-fluid pb-5">
+    <div class="row spring-banner align-items-center">
+        <div class="col-11 mx-auto text-center">
+            <h1 class="header-white text-shadow-purple text-uppercase mb-3">spring fever party</h1>
+            <a href="#" class="btn btn-lg mb-5 banner-btn">GALLERY</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 mx-auto col-lg-6 my-3">
+           <div class="youtube-player" data-id="d1mGWgp4uto"></div>
+        </div>
+        <div class="col-10 mx-auto col-lg-6 my-3">
+            <h1>Featuring</h1>
+            <h4 class="mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+        </div>
+    </div>
+</div>
+
+<!--HOLIDAY MIXER SECTION-->
+<div class="container-fluid py-5">
+    <div class="row holiday-banner align-items-center">
+        <div class="col-11 mx-auto text-center">
+            <h1 class="header-white text-shadow mb-3">HOLIDAY SOCIAL MIXER</h1>
+            <a href="#" class="btn btn-lg mb-5 banner-btn">GALLERY</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 mx-auto col-lg-6 my-3">
+           <picture>
+              <source srcset="img/holidayMixer.webp" type="image/webp" class="img-fluid circle-photo">
+              <source srcset="img/holidayMixer.jpg" type="image/jpeg" class="img-fluid circle-photo"> 
+              <img src="img/holidayMixer.jpg" alt="holiday mixer" class="img-fluid circle-photo">
+            </picture>
+        </div>
+        <div class="col-10 mx-auto col-lg-6 my-3">
+            <h1>Our First Event</h1>
+            <h4 class="mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>

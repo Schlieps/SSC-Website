@@ -10,6 +10,10 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
+app.get("/events", function(req, res){
+    res.render("events");
+});
+
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("SSC Server Has Started");
 });
