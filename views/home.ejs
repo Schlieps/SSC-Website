@@ -1,7 +1,7 @@
 <% include ./partials/header %>
 
 <!--HOME SECTION-->
-<div id="home" class="container-fluid home py-5 d-flex align-items-center justify-content-center">
+<div id="home" class="container-fluid home d-flex align-items-center justify-content-center">
     <div class="video-container">
          <video class="video-item" autoplay loop muted>
             <source src="video/headerFinal.mp4" type="video/mp4">Your browser does not support video tag
@@ -15,155 +15,68 @@
 </div>
 
 <!--ABOUT SECTION-->
-<div id="about" class="container-fluid py-5">
-    <div class="row">
-       <div class="col-11 mx-auto text-center py-3 my-5">
-            <h1 class="title2 text-uppercase">Liberating the Seattle Freeze</h1>
+<div id="about" class="container-fluid">
+    <div class="row full-page text-center">
+       <div class="col-10 mx-auto my-auto">
+            <h1 class="title2">Breaking the Seattle Freeze</h1>
            <h4 class="text-muted">Expanding your social circle can be a bit daunting and meeting randoms in bars ain't always fun. We organize a series of social events to get friends of friends together, to connect people who love to have fun, party and like to go crazy (in a good way)!</h4>
-           <a class="btn about-btn nounderline my-3" href="mailto:bartek@seattlesocialcircle.com">Partner with Us</a>
+           <a class="btn page-btn nounderline my-3" href="mailto:info@seattlesocialcircle.com">Partner with Us</a>
        </div>
     </div>
 </div>
 
-<!--UPCOMING SECTION-->
-<div id="upcoming" class="container-fluid">
-    <div class="row upcoming-banner align-items-center">
-        <div class="col-11 mx-auto text-center">
-            <h1 class="header-white text-shadow text-uppercase mb-3">winter is ending</h1>
-            <a href="#" class="btn btn-lg mb-5 banner-btn">PARTY IS COMING</a>
-        </div>
-    </div>
-</div>
-
-<!--FEATURED SPONSOR SECTION-->
-<div class="container-fluid py-5">
-    <div class="row">
-        <div class="col-11 mx-auto text-center py-3">
-            <h1 class="title2 text-uppercase">Featured Sponsor</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 col-md-7 mx-auto py-3">
-            <div class="sponsor-container">
-                <picture>
-                  <source srcset="img/picHomeSmart.webp" type="image/webp" class="img-fluid circle-photo sponsor-img">
-                  <source srcset="img/picHomeSmart.jpg" type="image/jpeg" class="img-fluid circle-photo sponsor-img"> 
-                  <img src="img/picHomeSmart.jpg" alt="photo" class="img-fluid circle-photo sponsor-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow sponsor-link">Chris Bajuk</h3>
-               </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--WINTER SOIREE SECTION-->
-<div id="events" class="container-fluid">
-    <div class="row winter-banner align-items-center">
-        <div class="col-11 mx-auto text-center">
-            <h1 class="header-white text-shadow-blue text-uppercase mb-3">a winter soirée</h1>
-            <a href="#" class="btn btn-lg mb-5 banner-btn">GALLERY</a>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-10 mx-auto col-lg-6 my-3">
-           <div class="youtube-player" data-id="7KbMC7nnlj8"></div>
-        </div>
-        <div class="col-10 mx-auto col-lg-6 my-3">
-            <h1 class="title3">Our Largest Event Yet</h1>
-            <h4 class="mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-        </div>
-    </div>
-    <div class="row">
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/winterDJ.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/winterDJ.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/winterDJ.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="http://www.diamondheights.org/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">diamond heights</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/winterPig.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/winterPig.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/winterPig.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">Whistle Pig</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/winterArtist.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/winterArtist.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/winterArtist.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">Shawn McClure</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/winterSinger.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/winterSinger.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/winterSinger.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="https://www.instagram.com/iriskymm">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">Iris Kymm</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-    </div>
-</div>
-
-<div class="container pt-3 pb-5">
-  <!--title row-->
-  <div class="row">
-    <div class="col-11 mx-auto">
-        <h6>SPONSORED BY</h6>
-    </div>
+<!--3 PILLARS SECTION-->
+<section class="off-white">
+  <div class="container">
+      <div class="row text-center full-page">
+          <div class="pillar-icon col-10 m-auto col-md-4">
+              <i class="fas fa-glass-cheers"></i>
+              <h1 class="title2">Parties</h1>
+              <h4 class="text-muted">Hosting social events for young professionals.</h4>
+          </div>
+          <div class="col-10 m-auto col-md-4">
+              <i class="pillar-icon fas fa-microphone"></i>
+              <h1 class="title2">Artists</h1>
+              <h4 class="text-muted">Providing a platform for emerging DJs, singers, and artists.</h4>
+          </div>
+          <div class="pillar-icon col-10 m-auto col-md-4">
+              <i class="far fa-handshake"></i>
+              <h1 class="title2">Business</h1>
+              <h4 class="text-muted">Showcasing local businesses.</h4>
+          </div>
+      </div>
   </div>
-  <!--end of title row-->
-  <div class="row px-3">
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
-               <img src="img/logoHomeSmart.png" alt="photo" class="img-fluid photo-img">
-               <a href="/">
-                   <picture>
-                      <source srcset="img/picHomeSmart.webp" type="image/webp" class="img-fluid photo-link">
-                      <source srcset="img/picHomeSmart.jpg" type="image/jpeg" class="img-fluid photo-link"> 
-                      <img src="img/picHomeSmart.jpg" alt="photo" class="img-fluid photo-link">
-                    </picture>
-               </a>
-           </div>
+  
+</section>
+
+<!--SPONSORS SECTION-->
+<div id="sponsors" class="container">
+  <div class="row full-page text-center d-flex align-items-center">
+    <div class="col">
+    <!--	title row-->
+      <div class="row">
+        <div class="col-10 mx-auto text-center py-5">
+          <h1 class="title2">Our Sponsors</h1>
         </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+      </div>
+      <!--end of title row-->
+    <div class="row">
+      <div class="col-10 m-auto col-md-4">
+        <div class="photo-container">
+             <img src="img/logoHomeSmart.png" alt="photo" class="img-fluid photo-img">
+             <a href="/">
+                 <picture>
+                    <source srcset="img/picHomeSmart.webp" type="image/webp" class="img-fluid photo-link">
+                    <source srcset="img/picHomeSmart.jpg" type="image/jpeg" class="img-fluid photo-link"> 
+                    <img src="img/picHomeSmart.jpg" alt="photo" class="img-fluid photo-link">
+                  </picture>
+             </a>
+         </div>
+      </div>
+      <div class="col-10 m-auto col-md-8">
+        <div class="row">
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoSebis.png" alt="photo" class="img-fluid photo-img">
                <a href="http://sebisbistro.com/onlinemenu">
                    <picture>
@@ -173,11 +86,9 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoYum.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
                    <picture>
@@ -187,11 +98,9 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoBuchaBelly.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
                     <picture>
@@ -201,11 +110,9 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoWhistlePig.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
                    <picture>
@@ -215,103 +122,11 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-    </div>
-</div>
-
-<!--CHARITY GALA SECTION-->
-<div class="container-fluid">
-    <div class="row charity-banner align-items-center">
-        <div class="col-11 mx-auto text-center">
-            <h1 class="header-white text-shadow-gold text-uppercase mb-3">circle of giving</h1>
-            <a href="#" class="btn btn-lg mb-5 banner-btn">GALLERY</a>
-        </div>
-    </div>
-</div>
-
-<div class="container pb-5">
-    <div class="row">
-        <div class="col-10 mx-auto col-lg-6 my-3">
-           <div class="youtube-player" data-id="YdE2P0LK1G0"></div>
-        </div>
-        <div class="col-10 mx-auto col-lg-6 my-3">
-            <h1 class="title3">First Annual<br>Charitable Gala</h1>
-            <h4 class="mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-        </div>
-    </div>
-    <div class="row">
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/charityArt.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/charityArt.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/charityArt.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">artwork</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/charityDJ.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/charityDJ.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/charityDJ.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">Musician</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/charityPerformer.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/charityPerformer.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/charityPerformer.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">Performer</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-       <!--single photo-->
-        <div class="col-10 mx-auto col-sm-6 col-lg-3 my-3">
-           <div class="event-photo-container">
-               <picture>
-                  <source srcset="img/charityDancer.webp" type="image/webp" class="img-fluid event-photo-img">
-                  <source srcset="img/charityDancer.jpg" type="image/jpeg" class="img-fluid event-photo-img"> 
-                  <img src="img/charityDancer.jpg" alt="photo" class="img-fluid event-photo-img">
-                </picture>
-               <a href="/">
-                   <h3 class="text-uppercase text-center text-shadow event-photo-link">Dancer</h3>
-               </a>
-           </div>
-       </div>
-       <!--end single photo-->
-    </div>
-</div>
-
-<div class="container pt-3 pb-5">
-  <!--title row-->
-  <div class="row">
-    <div class="col-11 mx-auto">
-        <h6>SPONSORED BY</h6>
-    </div>
-  </div>
-  <!--end of title row-->
-  <div class="row px-3">
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoEO.png" alt="photo" class="img-fluid photo-img">
                <a href="http://sebisbistro.com/onlinemenu">
                    <picture>
@@ -321,11 +136,9 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoLaunchParty.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
                    <picture>
@@ -335,11 +148,9 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoFC.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
                    <picture>
@@ -349,11 +160,9 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
-        <!--single photo-->
-        <div class="col-5 mx-auto col-sm-4 col-lg-2 d-flex align-items-center mx-2 my-2">
-           <div class="photo-container">
+          </div>
+          <div class="col m-auto">
+            <div class="photo-container">
                <img src="img/logoYPOS.png" alt="photo" class="img-fluid photo-img">
                <a href="/">
                    <picture>
@@ -363,154 +172,108 @@
                     </picture>
                </a>
            </div>
-        </div>
-        <!--end single photo-->
+          </div>
+      </div>
     </div>
+  </div>
+    </div>
+</div>
 </div>
 
 <!--TEAM SECTION-->
-<section id="team" class="pt-5">
-    <div class="container">
-      <!--	title row-->
-      <div class="row">
-        <div class="col-10 mx-auto text-center py-3">
-          <h1 class="title2 text-uppercase">MEET THE TEAM</h1>
+<section id="team" class="off-white">
+  <div class="container">
+      <div class="row full-page text-center">
+        <div class="col">
+          <!--	title row-->
+        <div class="row">
+          <div class="col-10 mx-auto text-center py-5">
+            <h1 class="title2">Meet the Team</h1>
+          </div>
+        </div>
+        <!--end of title row-->
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 my-5">
+            <div class="card text-center">
+                  <picture>
+                    <source srcset="img/teamBartek.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                    <source srcset="img/teamBartek.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                    <img src="img/teamBartek.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                  </picture>
+              <div class="card-body">
+                <h2>Bartek Nowierski</h2>
+                <h5>Title 1</h5>
+                <div class="team-underline"></div>
+                <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
+              </div>
+            </div>
+          </div>
+          <!--end of team col-->
+          <div class="col-lg-3 col-sm-6 my-5">
+            <div class="card text-center">
+              <picture>
+                    <source srcset="img/teamJas.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                    <source srcset="img/teamJas.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                    <img src="img/teamJas.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                  </picture>
+              <div class="card-body">
+                <h2>Jas Banwait</h2>
+                <h5>Title 2</h5>
+                <div class="team-underline"></div>
+                <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
+              </div>
+            </div>
+          </div>
+          <!--end of team col-->
+          <div class="col-lg-3 col-sm-6 my-5">
+            <div class="card text-center">
+              <picture>
+                    <source srcset="img/teamAni.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                    <source srcset="img/teamAni.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                    <img src="img/teamAni.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                  </picture>
+              <div class="card-body">
+                <h2>Ani Nguyen</h2>
+                <h5>Title 3</h5>
+                <div class="team-underline"></div>
+                <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
+              </div>
+            </div>
+          </div>
+          <!--end of team col-->
+          <div class="col-lg-3 col-sm-6 my-5">
+            <div class="card text-center">
+              <picture>
+                    <source srcset="img/teamVlad.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
+                    <source srcset="img/teamVlad.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
+                    <img src="img/teamVlad.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
+                  </picture>
+              <div class="card-body">
+                <h2>Vlad Nehaev</h2>
+                <h5>Title 4</h5>
+                <div class="team-underline"></div>
+                <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
+              </div>
+            </div>
+          </div>
+          <!--end of team col-->
+        </div>
         </div>
       </div>
-      <!--end of title row-->
-      <div class="row py-5">
-        <div class="col-lg-3 col-sm-6 my-5">
-          <div class="card text-center">
-                <picture>
-                  <source srcset="img/teamBartek.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
-                  <source srcset="img/teamBartek.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
-                  <img src="img/teamBartek.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
-                </picture>
-            <div class="card-body">
-              <h2 class="neutratext">Bartek Nowierski</h2>
-              <h5>Title 1</h5>
-              <div class="team-underline"></div>
-              <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
-            </div>
-            <div class="card-footer d-flex justify-content-around">
-              <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
-            </div>
-          </div>
-        </div>
-        <!--end of team col-->
-        <div class="col-lg-3 col-sm-6 my-5">
-          <div class="card text-center">
-            <picture>
-                  <source srcset="img/teamJas.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
-                  <source srcset="img/teamJas.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
-                  <img src="img/teamJas.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
-                </picture>
-            <div class="card-body">
-              <h2 class="neutratext">Jas Banwait</h2>
-              <h5>Title 2</h5>
-              <div class="team-underline"></div>
-              <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
-            </div>
-            <div class="card-footer d-flex justify-content-around">
-              <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
-            </div>
-          </div>
-        </div>
-        <!--end of team col-->
-        <div class="col-lg-3 col-sm-6 my-5">
-          <div class="card text-center">
-            <picture>
-                  <source srcset="img/teamAni.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
-                  <source srcset="img/teamAni.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
-                  <img src="img/teamAni.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
-                </picture>
-            <div class="card-body">
-              <h2 class="neutratext">Ani Nguyen</h2>
-              <h5>Title 3</h5>
-              <div class="team-underline"></div>
-              <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
-            </div>
-            <div class="card-footer d-flex justify-content-around">
-              <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
-            </div>
-          </div>
-        </div>
-        <!--end of team col-->
-        <div class="col-lg-3 col-sm-6 my-5">
-          <div class="card text-center">
-            <picture>
-                  <source srcset="img/teamVlad.webp" type="image/webp" width="180" class="img-fluid rounded-circle mx-auto">
-                  <source srcset="img/teamVlad.jpg" type="image/jpeg" width="180" class="img-fluid rounded-circle mx-auto"> 
-                  <img src="img/teamVlad.jpg" alt="photo" width="180" class="img-fluid rounded-circle mx-auto">
-                </picture>
-            <div class="card-body">
-              <h2 class="neutratext">Vlad Nehaev</h2>
-              <h5>Title 4</h5>
-              <div class="team-underline"></div>
-              <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sint.</h5>
-            </div>
-            <div class="card-footer d-flex justify-content-around">
-              <a class="btn team-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email</a>
-            </div>
-          </div>
-        </div>
-        <!--end of team col-->
-      </div>
-    </div>
+  </div>
 </section>
 
-<!--CONTACT SECTION-->
-<div id="contact" class="container-fluid">
-    <div class="row align-items-center white-background">
-        <div class="col-8 mx-auto col-md-6 py-5 text-center text-uppercase">
-                <a class="btn about-btn nounderline" href="mailto:bartek@seattlesocialcircle.com">Email Us</a>
-        </div>
-    </div>
-</div>
-
-
-<!--SECOND SITE-->
-
-<!--ABOUT SECTION-->
-<!--<div class="regular-wrapper white-background">-->
-<!--    <div id="about" class="content text-center white-background">-->
-       
-<!--                <h1 class="header-black">Liberating the Seattle Freeze</h1>-->
-<!--               <div class="about-underline mb-3"></div>-->
-<!--               <h4>Expanding your social circle can be a bit daunting and meeting randoms in bars ain't always fun. We organize a series of social events to get friends of friends together, to connect people who love to have fun, party and like to go crazy (in a good way)!</h4>-->
-<!--               <a class="btn about-btn nounderline my-3" href="mailto:bartek@seattlesocialcircle.com">Partner with Us</a>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="parallax-wrapper">-->
-<!--    <div class="content">-->
-<!--        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="regular-wrapper black-background">-->
-<!--    <div class="content">-->
-<!--        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="parallax-wrapper">-->
-<!--    <div class="content">-->
-<!--        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="regular-wrapper white-background">-->
-<!--    <div class="content">-->
-<!--        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="parallax-wrapper">-->
-<!--    <div class="content">-->
-<!--        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="regular-wrapper second-black-background">-->
-<!--    <div class="content">-->
-<!--        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>-->
-<!--    </div>-->
-<!--</div>-->
 
 <% include ./partials/footer %>

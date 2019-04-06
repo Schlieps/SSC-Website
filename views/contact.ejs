@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+
+<!--CONTACT SECTION-->
+<div id="contact" class="container-fluid">
+    <div class="row full-page">
+        <div class="col-10 m-auto py-5">
+            <form id="contact-form" action="/contact" method="post">
+              <input name="name" type="text" placeholder="Full Name" required>
+              <input name="mail" type="text" placeholder="Your Email" required>
+              <input name="subject" type="text" placeholder="Subject" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button type="submit" name="submit">SEND MAIL</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--add company/organization, phone number, etc?-->
+
+
+<% include ./partials/footer %>

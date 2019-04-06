@@ -1,6 +1,11 @@
+require('dotenv').config()
+
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
+var nodemailer = require("nodemailer");
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -10,8 +15,60 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
+app.get("/contact", function(req, res){
+    res.render("contact");
+});
+
+app.post("/contact", urlencodedParser, function(req, res){
+    var email = `${req.body.mail}`
+    const subject = `${req.body.subject}`
+    const message = `
+        Contact Details
+            Name: ${req.body.name}
+            E-mail: ${req.body.mail}
+            
+            ${req.body.message}`
+    ;
+    
+    let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+        type: 'OAuth2',
+        user: "seattlesocialcircle@gmail.com",
+        clientId: process.env.CLIENTID,
+        clientSecret: process.env.SECRET,
+        refreshToken: process.env.TOKEN
+    }
+});
+    
+    
+    var mail = {
+        from: "seattlesocialcircle@gmail.com",
+        to: "d.schlieps@gmail.com",
+        subject: subject,
+        text: message
+    };
+
+    transporter.sendMail(mail, function(err, info) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Email sent: " + info.response);
+        }
+        transporter.close();
+    });
+    
+    res.render("contact-success", {data:req.body});
+});
+
 app.get("/events", function(req, res){
     res.render("events");
+});
+
+app.get("/artists", function(req, res){
+    res.render("artists");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){

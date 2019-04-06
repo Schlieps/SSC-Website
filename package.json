@@ -1,7 +1,7 @@
 {
-  "name": "jasmin-kwan",
+  "name": "seattle-social-circle",
   "version": "1.0.0",
-  "description": "photography portfolio website",
+  "description": "Website for Seattle Social Circle",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemailer": "^6.0.0"
   }
 }
