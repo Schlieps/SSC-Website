@@ -46,7 +46,7 @@ app.post("/contact", urlencodedParser, function(req, res){
     
     var mail = {
         from: "seattlesocialcircle@gmail.com",
-        to: "d.schlieps@gmail.com",
+        to: "info@seattlesocialcircle.com",
         subject: subject,
         text: message
     };
