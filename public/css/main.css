@@ -40,6 +40,15 @@ body{
     background:var(--mainWhite);
     color:var(--mainBlack);
 }
+.snap-container {
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.snap-child {
+  scroll-snap-align: start;
+}
 .gotham{
     font-family: 'Conv_Gotham-Book', Sans-Serif;
 }
@@ -152,11 +161,6 @@ body{
   min-height: 65vh;
 }
 /*NAVBAR*/
-.navbar-initial{
-    position:absolute;
-    z-index: 1000;
-    width:100%;
-}
 .navbar-background{
     background-color:var(--transparent);
     animation:fromTop;
