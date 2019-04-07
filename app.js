@@ -71,6 +71,6 @@ app.get("/artists", function(req, res){
     res.render("artists");
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(process.env.PORT || 3000, process.env.IP, function(){
     console.log("SSC Server Has Started");
 });
