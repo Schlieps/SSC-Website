@@ -231,6 +231,7 @@ body{
   border: 2px solid var(--mainBlack);
   padding: 15px 45px;
   font-size: 20px;
+  border-radius: 0 !important;
   transition: all 1s;
   text-transform: uppercase;
   font-family: 'Conv_Gotham-Book', Sans-Serif;
@@ -240,15 +241,17 @@ body{
   color: var(--mainWhite);
   background: var(--secondBlack);
   border-color: var(--secondBlack);
+  border-radius: 0 !important;
   transform: translateY(-7px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-shadow: none;
 }
 .contact-btn {
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  background: rgba(255,255,255, 0.8);
   border: 2px solid var(--mainWhite);
   padding: 15px 45px;
+  border-radius: 0 !important;
   font-size: 20px;
   transition: all 1s;
   text-transform: uppercase;
@@ -258,6 +261,7 @@ body{
 .contact-btn:hover {
   color: var(--mainGreen);
   background: var(--mainWhite);
+  border-radius: 0 !important;
   border-color: var(--mainWhite);
   transform: translateY(-7px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
@@ -267,6 +271,7 @@ body{
   border: 2px solid var(--mainWhite);
   padding: 15px 45px;
   font-size: 20px;
+  border-radius: 0 !important;
   transition: all 1s;
   text-transform: uppercase;
   font-family: 'Conv_Gotham-Book', Sans-Serif;
@@ -279,6 +284,7 @@ body{
   color: var(--mainBlack);
   background: var(--mainWhite);
   border-color: var(--mainWhite);
+  border-radius: 0 !important;
   transform: translateY(-7px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-shadow: none;
@@ -286,6 +292,7 @@ body{
 .team-btn{
     background-color: var(--lightGrey);
     color: var(--mainBlack);
+    border-radius: 0 !important;
     padding: 5px 27px;
     font-size: 15px;
     cursor: pointer;
@@ -295,6 +302,7 @@ body{
 .team-btn:hover{
     background-color: var(--mainBlack);
     color: var(--lightGrey);
+    border-radius: 0 !important;
     transform: translateY(-5px);
 }
 /*HOME SECTION*/
