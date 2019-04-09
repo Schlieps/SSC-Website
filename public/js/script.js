@@ -28,12 +28,10 @@
     }
 
 $(document).ready(function(){
-    
+
   //NAVBAR TOGGLER
   $('.navbar-toggler').click(function(){
     $('.navbar-toggler').toggleClass('change')
   });
-    
-   
-    
+
 });
