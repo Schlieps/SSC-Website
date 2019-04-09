@@ -391,6 +391,9 @@ opacity: 0.8;
 .photo-container{
     position:relative;
 }
+.photo-container-featured{
+  position:relative;
+}
 .photo-img{
     transition: 0.7s all ease-in-out;
     max-height:200px;
@@ -415,7 +418,7 @@ opacity: 0.8;
     max-height:200px;
 }
 .photo-link-featured{
-  position:absolute;
+    position:absolute;
     top:50%;
     left:50%;
     opacity: 0;
@@ -428,6 +431,9 @@ opacity: 0.8;
 }
 .photo-container:hover .photo-link{
     opacity:1;
+}
+.photo-container-featured:hover .photo-link-featured{
+  opacity:1;
 }
 /*EVENT PHOTOS*/
 .event-photo-container{
