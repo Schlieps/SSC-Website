@@ -404,6 +404,9 @@ opacity: 0.8;
 .photo-container:hover .photo-img {
   opacity: 0;
 }
+.photo-container-featured:hover .photo-img-featured {
+  opacity: 0;
+}
 .photo-link{
     position:absolute;
     top:50%;
