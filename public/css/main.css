@@ -385,17 +385,37 @@ transform: scale(1.1);
 opacity: 0.8;
 }
 /*SPONSOR LOGOS*/
+.logo-quilt{
+  max-height: 50vh;
+}
 .photo-container{
     position:relative;
 }
 .photo-img{
     transition: 0.7s all ease-in-out;
+    max-height:200px;
+}
+.photo-img-featured{
+  transition: 0.7s all ease-in-out;
 }
 .photo-container:hover .photo-img {
   opacity: 0;
 }
 .photo-link{
     position:absolute;
+    top:50%;
+    left:50%;
+    opacity: 0;
+    border-radius: 100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    transform:translate(-50%, -50%);
+    color:var(--mainWhite);
+    transition:0.7s all ease-in-out;
+    max-height:200px;
+}
+.photo-link-featured{
+  position:absolute;
     top:50%;
     left:50%;
     opacity: 0;
