@@ -27,6 +27,11 @@
         this.parentNode.replaceChild(iframe, this);
     }
 
+    var http = require("http");
+    setInterval(function() {
+        http.get("seattlesocialcircle.herokuapp.com");
+    }, 300000); // every 5 minutes (300000)
+
 $(document).ready(function(){
 
   //NAVBAR TOGGLER
