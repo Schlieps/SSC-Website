@@ -45,9 +45,18 @@ body{
 .full-page {
   min-height: 100vh;
   padding-top:81px;
+  margin:170px;
 }
 .full-page-no-p {
   min-height: 100vh;
+}
+.p-left{
+  padding-left:170px;
+  padding-right:50px
+}
+.p-right{
+  padding-right:170px;
+  padding-left:50px;
 }
 .gotham{
     font-family: 'Conv_Gotham-Book', Sans-Serif;
@@ -56,6 +65,11 @@ body{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
+}
+.black-background{
+  background-color:var(--mainBlack);
+  color:white;
+  min-height:100vh;
 }
 /*HEADERS*/
 .title1{
@@ -67,10 +81,13 @@ body{
   text-transform: uppercase;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
+         0px 18px 23px rgba(0,0,0,0.1);
 }
 .title2a{
     color: var(--mainYellow);
+}
+.title2b{
+  color:var(--mainWhite);
 }
 @media screen and (min-width: 768px) {
   .title1,.title1a {
@@ -83,12 +100,12 @@ body{
   }
 }
 @media screen and (min-width: 768px) {
-  .title2, .title2a {
+  .title2,.title2a,.title2b {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 767px) {
-  .title2, .title2a {
+  .title2,.title2a,.title2b {
     font-size: 40px;
   }
 }
