@@ -26,10 +26,10 @@ app.post("/contact", urlencodedParser, function(req, res){
         Contact Details
             Name: ${req.body.name}
             E-mail: ${req.body.mail}
-            
+
             ${req.body.message}`
     ;
-    
+
     let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -42,8 +42,7 @@ app.post("/contact", urlencodedParser, function(req, res){
         refreshToken: process.env.TOKEN
     }
 });
-    
-    
+
     var mail = {
         from: "seattlesocialcircle@gmail.com",
         to: "info@seattlesocialcircle.com",
