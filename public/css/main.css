@@ -479,6 +479,16 @@ opacity: 0.7;
   }
 }
 /* ARTIST SECTION */
+.art-img{
+  max-height: 500px;
+}
+.red-underline-left{
+  width:8rem;
+  height:3px;
+  background:var(--mainRed);
+  margin-right:auto;
+  margin-left:0;
+}
 .artist-black-background{
   background-color:var(--mainBlack);
   color:white;
@@ -503,5 +513,10 @@ opacity: 0.7;
   .artist-p-right{
     padding-right:50px;
     padding-left:50px;
+  }
+}
+@media (min-width:992px){
+  .art-img{
+    max-height: 700px;
   }
 }
