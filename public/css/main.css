@@ -54,6 +54,10 @@ body{
 .full-page-no-pm{
   min-height: 100vh;
 }
+.m-100{
+  margin-left:100px;
+  margin-right:100px;
+}
 .gotham{
     font-family: 'Conv_Gotham-Book', Sans-Serif;
 }
@@ -79,9 +83,15 @@ body{
 }
 .title2-white{
   color:var(--mainWhite);
+  text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
 }
 .title3-white{
   color:var(--mainWhite);
+  text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
 }
 @media (min-width: 768px) {
   .title1,.title1-white {
@@ -250,31 +260,6 @@ body{
   transform: translateY(-7px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-shadow: none;
-}
-.contact-btn {
-  color: var(--mainBlack);
-  background: rgba(255,255,255, 0.7);
-  border: 2px solid var(--mainWhite);
-  padding: 15px 45px;
-  border-radius: 0 !important;
-  font-size: 20px;
-  transition: all 1s;
-  text-transform: uppercase;
-  font-family: 'Conv_Gotham-Book', Sans-Serif;
-  box-shadow:   0px 1px 2px rgba(0, 0, 0, 0.3);
-}
-.contact-btn:hover {
-  color: var(--mainRed);
-  background: var(--mainWhite);
-  border-radius: 0 !important;
-  border-color: var(--mainWhite);
-  transform: translateY(-7px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-}
-@media (max-width: 375px) {
-  .contact-btn {
-    font-size: 15px;
-  }
 }
 .banner-btn {
   color: var(--mainWhite);
@@ -445,6 +430,60 @@ opacity: 0.7;
 }
 .card-body{
   text-align:left;
+}
+/* CONTACT SECTION */
+.webp .contact-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/summerBackground.webp) center/cover fixed no-repeat;
+  min-height: 100vh;
+}
+.no-webp .contact-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/summerBackground.jpg) center/cover fixed no-repeat;
+  min-height: 100vh;
+}
+.input-style{
+  color: var(--mainWhite);
+  background: rgba(250,250,250, 0.1);
+  border: 2px solid var(--mainWhite);
+  padding: 15px 45px;
+  border-radius: 0 !important;
+  font-size: 20px;
+  font-family: 'Conv_Gotham-Book', Sans-Serif;
+  box-shadow:   0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.input-style:focus{
+  background: rgba(250,250,250, 0.1);
+  color: var(--mainWhite);
+}
+#contact-form .form-group input::placeholder{
+  color:var(--mainWhite);
+}
+#contact-form .form-group textarea::placeholder{
+  color:var(--mainWhite);
+}
+.contact-btn {
+  color: var(--mainBlack);
+  background: rgba(255,255,255, 0.7);
+  border: 2px solid var(--mainWhite);
+  padding: 15px 45px;
+  border-radius: 0 !important;
+  font-size: 20px;
+  transition: all 1s;
+  text-transform: uppercase;
+  font-family: 'Conv_Gotham-Book', Sans-Serif;
+  box-shadow:   0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.contact-btn:hover {
+  color: var(--mainRed);
+  background: var(--mainWhite);
+  border-radius: 0 !important;
+  border-color: var(--mainWhite);
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 375px) {
+  .contact-btn {
+    font-size: 15px;
+  }
 }
 /*EVENTS SECTION*/
 .webp .upcoming-banner {

@@ -19,7 +19,7 @@ app.get("/contact", function(req, res){
     res.render("contact");
 });
 
-app.post("/contact", urlencodedParser, function(req, res){
+app.post("/", urlencodedParser, function(req, res){
     var email = `${req.body.mail}`
     const subject = `${req.body.subject}`
     const message = `
@@ -45,7 +45,7 @@ app.post("/contact", urlencodedParser, function(req, res){
 
     var mail = {
         from: "seattlesocialcircle@gmail.com",
-        to: "info@seattlesocialcircle.com",
+        to: "d.schlieps@gmail.com",
         subject: subject,
         text: message
     };
@@ -58,7 +58,7 @@ app.post("/contact", urlencodedParser, function(req, res){
         }
         transporter.close();
     });
-    
+
     res.render("contact-success", {data:req.body});
 });
 
@@ -69,6 +69,7 @@ app.get("/events", function(req, res){
 app.get("/artists", function(req, res){
     res.render("artists");
 });
+
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
     console.log("SSC Server Has Started");
