@@ -49,14 +49,10 @@ body{
 }
 .full-page-no-p {
   min-height: 100vh;
+  margin:100px
 }
-.p-left{
-  padding-left:100px;
-  padding-right:50px
-}
-.p-right{
-  padding-right:100px;
-  padding-left:50px;
+.full-page-no-pm{
+  min-height: 100vh;
 }
 .gotham{
     font-family: 'Conv_Gotham-Book', Sans-Serif;
@@ -65,11 +61,6 @@ body{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
-}
-.black-background{
-  background-color:var(--mainBlack);
-  color:white;
-  min-height:100vh;
 }
 /*HEADERS*/
 .title1{
@@ -89,9 +80,12 @@ body{
 .title2-white{
   color:var(--mainWhite);
 }
+.title3-white{
+  color:var(--mainWhite);
+}
 @media (min-width: 768px) {
   .title1,.title1-white {
-    font-size: 90px;
+    font-size: 70px;
   }
 }
 @media (max-width: 767px) {
@@ -110,12 +104,12 @@ body{
   }
 }
 @media (min-width: 768px) {
-  .title3 {
+  .title3, .title3-white {
     font-size: 35px;
   }
 }
 @media (max-width: 767px) {
-  .title3 {
+  .title3,.title3-white {
     font-size: 30px;
   }
 }
@@ -388,7 +382,7 @@ body{
 }
 .about-photo-container:hover .about-photo-img {
 transform: scale(1.1);
-opacity: 0.8;
+opacity: 1;
 }
 /*SPONSOR LOGOS*/
 .photo-container{
@@ -443,36 +437,15 @@ opacity: 0.8;
 .photo-container-featured:hover .photo-link-featured{
   opacity:1;
 }
-/*EVENT PHOTOS*/
-.event-photo-container{
-    position:relative;
-    overflow:hidden;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
-    /*transition: 0.5s all ease-in-out;*/
+/*TEAM SECTION*/
+.card{
+    background-color: var(--mainWhite);
+    color:var(--mainBlack);
 }
-.event-photo-img{
-    transition: 0.7s all ease-in-out;
+.card-body{
+  text-align:left;
 }
-.event-photo-link{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    color:var(--mainWhite);
-    transition:0.5s all ease-in-out;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
-}
-.event-photo-container:hover .event-photo-link{
-    font-size: 2rem;
-}
-.event-photo-container:hover .event-photo-img {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
-/*UPCOMING SECTION*/
+/*EVENTS SECTION*/
 .webp .upcoming-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingGOT.webp) center/cover no-repeat;
   min-height: 100vh;
@@ -481,11 +454,53 @@ opacity: 0.8;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/upcomingGOT.jpg) center/cover  no-repeat;
   min-height: 100vh;
 }
-/*TEAM SECTION*/
-.card{
-    background-color: var(--mainWhite);
-    color:var(--mainBlack);
+.event-black-background{
+  background-color:var(--mainBlack);
+  color:white;
+  min-height:100vh;
 }
-.card-body{
-  text-align:left;
+.event-p-left{
+  padding-left:100px;
+  padding-right:50px
+}
+.event-p-right{
+  padding-right:100px;
+  padding-left:50px;
+}
+@media (max-width:991px){
+  .event-p-left{
+    padding-left:50px;
+    padding-right:50px
+  }
+  .event-p-right{
+    padding-right:50px;
+    padding-left:50px;
+  }
+}
+/* ARTIST SECTION */
+.artist-black-background{
+  background-color:var(--mainBlack);
+  color:white;
+  min-height:100vh;
+}
+.artist-p-left{
+  padding-left:100px;
+  padding-right:50px
+}
+.artist-p-right{
+  padding-right:100px;
+  padding-left:50px;
+}
+@media (max-width:991px){
+  .artist-black-background{
+    min-height:25vh;
+  }
+  .artist-p-left{
+    padding-left:50px;
+    padding-right:50px
+  }
+  .artist-p-right{
+    padding-right:50px;
+    padding-left:50px;
+  }
 }
