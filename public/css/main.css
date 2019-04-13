@@ -44,7 +44,7 @@ body{
 }
 .full-page {
   min-height: 100vh;
-  padding-top:57px;
+  padding-top:56px;
   margin:100px;
 }
 .full-page-no-p {
@@ -174,8 +174,8 @@ body{
     cursor: pointer;
 }
 /*NAVBAR*/
-.header-icon{
-  font-size:36px;
+.navbar-logo{
+  max-height:37px;
 }
 .navbar-background{
     background-color:var(--transparent);
@@ -196,15 +196,16 @@ body{
     opacity: 1;
   }
 }
-.navbar-brand{
+.header-icon{
     color:var(--mainWhite);
     transition-property:color;
     transition-duration:0.3s;
     transition-timing-function:linear;
     padding-top: 0!important;
     padding-bottom: 0!important;
+    font-size:37px;
 }
-.navbar-brand:hover{
+.header-icon:hover{
     color:var(--mainRed);
 }
 .nav-link{
