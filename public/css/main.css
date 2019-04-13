@@ -371,14 +371,6 @@ transform: scale(1.1);
 opacity: 0.7;
 }
 /*SPONSOR LOGOS*/
-.webp .sponsor-banner {
-  background: linear-gradient(rgba(250,250,250,0.9), rgba(250,250,250,0.9)), url(../img/charityBackground.webp) center/cover fixed no-repeat;
-  min-height: 100vh;
-}
-.no-webp .sponsor-banner {
-  background: linear-gradient(rgba(250,250,250,0.9), rgba(250,250,250,0.9)), url(../img/charityBackground.jpg) center/cover fixed no-repeat;
-  min-height: 100vh;
-}
 .photo-container{
     position:relative;
 }
@@ -435,9 +427,11 @@ opacity: 0.7;
 .card{
     background-color: var(--mainWhite);
     color:var(--mainBlack);
+    border:none!important;
 }
 .card-body{
-  text-align:left;
+  text-align:center;
+
 }
 /* CONTACT SECTION */
 .webp .contact-banner {
