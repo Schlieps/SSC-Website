@@ -15,10 +15,6 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
-app.get("/contact", function(req, res){
-    res.render("contact");
-});
-
 app.post("/", urlencodedParser, function(req, res){
     var email = `${req.body.mail}`
     const subject = `${req.body.subject}`
@@ -46,6 +42,7 @@ app.post("/", urlencodedParser, function(req, res){
     var mail = {
         from: "seattlesocialcircle@gmail.com",
         to: "info@seattlesocialcircle.com",
+        // to: "d.schlieps@gmail.com",
         subject: subject,
         text: message
     };
