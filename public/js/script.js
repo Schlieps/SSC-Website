@@ -34,4 +34,14 @@ $(document).ready(function(){
     $('.navbar-toggler').toggleClass('change')
   });
 
+
+  //MAGNIFIC POPUP
+  $('.ajax-popup').magnificPopup({
+    type: 'ajax',
+    gallery:{
+        enabled:true
+      }
+  });
+
+
 });
