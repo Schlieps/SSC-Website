@@ -95,16 +95,16 @@ body{
 /* LARGE+ 992+ */ 
 @media screen and (min-width:992px){
   .title1,.title1-white {
-    font-size: 70px;
+    font-size: 45px;
   }
   .title2,.title2-yellow,.title2-white {
-    font-size: 55px;
+    font-size: 27px;
   }
   .title3, .title3-white {
-    font-size: 40px;
+    font-size: 23px;
   }
   .title4, .title4-white {
-    font-size: 25px;
+    font-size: 20px;
   }
   .input-style{
     font-size: 18px;
@@ -123,13 +123,13 @@ body{
 /* MEDIUM+ 768-991 */
 @media screen and (min-width:768px) and (max-width:991px){
   .title1,.title1-white {
-    font-size: 60px;
+    font-size: 40px;
   }
   .title2,.title2-yellow,.title2-white {
-    font-size: 45px;
+    font-size: 27px;
   }
   .title3, .title3-white {
-    font-size: 30px;
+    font-size: 23px;
   }
   .title4, .title4-white {
     font-size: 20px;
@@ -151,19 +151,19 @@ body{
 /* SMALL+ 576-767 */
 @media screen and (min-width:576px) and (max-width:767px){
   .title1,.title1-white {
-    font-size: 40px;
+    font-size: 35px;
   }
   .title2,.title2-yellow,.title2-white {
-    font-size: 30px;
+    font-size: 23px;
   }
   .title3,.title3-white {
-    font-size: 25px;
+    font-size: 21px;
   }
   .title4,.title4-white {
-    font-size: 15px;
+    font-size: 18px;
   }
   .input-style{
-    font-size: 18px;
+    font-size: 16px;
   }
   .full-page {
     margin:20px;
@@ -179,19 +179,19 @@ body{
 /* SMALL- 575- */
 @media screen and (max-width:575px){
   .title1,.title1-white {
-    font-size: 35px;
+    font-size: 30px;
   }
   .title2,.title2-yellow,.title2-white {
-    font-size: 25px;
+    font-size: 23px;
   }
   .title3,.title3-white {
-    font-size: 20px;
+    font-size: 21px;
   }
   .title4,.title4-white {
-    font-size: 15px;
+    font-size: 17px;
   }
   .input-style{
-    font-size: 18px;
+    font-size: 15px;
   }
   .full-page {
     margin:10px;
