@@ -33,6 +33,11 @@ body{
     background:var(--mainWhite);
     color:var(--mainBlack);
 }
+.black-background{
+  background-color:var(--mainBlack);
+  color:white;
+  min-height:100vh;
+}
 .snap-container {
   scroll-snap-type: y mandatory;
   max-height: 100vh;
@@ -91,6 +96,11 @@ body{
   text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
                 0px 8px 13px rgba(0,0,0,0.1),
                 0px 18px 23px rgba(0,0,0,0.1);
+}
+@media (max-width:991px){
+  .black-background{
+    min-height:25vh;
+  }
 }
 /* LARGE+ 992+ */ 
 @media screen and (min-width:992px){
@@ -420,7 +430,7 @@ body{
 }
 /*ABOUT SECTION*/
 .red-underline{
-  width:8rem;
+  width:6rem;
   height:3px;
   background:var(--mainRed);
   margin:1rem auto;
@@ -452,7 +462,7 @@ body{
   0px 18px 23px rgba(0,0,0,0.1);
 }
 .about-photo-container:hover .about-photo-link{
-  font-size: 3.5rem;
+  font-size: 2em;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
        0px 8px 13px rgba(0,0,0,0.1),
        0px 18px 23px rgba(0,0,0,0.1);
@@ -561,11 +571,6 @@ opacity: 0.7;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/upcomingGOT.jpg) center/cover fixed no-repeat;
   min-height: 100vh;
 }
-.event-black-background{
-  background-color:var(--mainBlack);
-  color:white;
-  min-height:100vh;
-}
 .event-p-left{
   padding-left:100px;
   padding-right:50px
@@ -589,16 +594,12 @@ opacity: 0.7;
   max-height: 400px;
 }
 .red-underline-left{
-  width:8rem;
+  width:3rem;
   height:3px;
   background:var(--mainRed);
   margin-right:auto;
   margin-left:0;
-}
-.artist-black-background{
-  background-color:var(--mainBlack);
-  color:white;
-  min-height:100vh;
+  margin:10px 0;
 }
 .artist-p-left{
   padding-left:100px;
@@ -608,10 +609,6 @@ opacity: 0.7;
   padding-right:100px;
   padding-left:50px;
 }
-@media (max-width:991px){
-  .artist-black-background{
-    min-height:25vh;
-  }
   .artist-p-left{
     padding-left:50px;
     padding-right:50px
