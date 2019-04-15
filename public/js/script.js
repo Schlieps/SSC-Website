@@ -43,5 +43,11 @@ $(document).ready(function(){
       }
   });
 
+  $('.ajax-popup2').magnificPopup({
+    type: 'ajax',
+    gallery:{
+        enabled:true
+      }
+  });
 
 });
