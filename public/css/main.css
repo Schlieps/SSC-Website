@@ -135,7 +135,7 @@ body{
   .navbar button:hover .bar2{
     transform: translateY(2.5px);
   }
-  .team-photo-container{
+  .team-photo-container,.about-photo-container{
     max-width:250px;
   }
 }
@@ -172,7 +172,7 @@ body{
   .navbar button:hover .bar2{
     transform: translateY(2.5px);
   }
-  .team-photo-container{
+  .team-photo-container,.about-photo-container{
     max-width:225px;
   }
 }
@@ -203,7 +203,7 @@ body{
     margin-left:20px;
     margin-right:20px;
   }
-  .team-photo-container{
+  .team-photo-container,.about-photo-container{
     max-width:200px;
   }
 }
@@ -234,7 +234,7 @@ body{
     margin-left:10px;
     margin-right:10px;
   }
-  .team-photo-container{
+  .team-photo-container,.about-photo-container{
     max-width:200px;
   }
 }
@@ -456,11 +456,10 @@ body{
 .about-photo-container{
   position:relative;
   overflow:hidden;
-  max-width:390px;
   background-color:black;
 }
 .about-photo-img{
-  transition: 0.7s all ease-in-out;
+  transition: 0.5s all ease-in-out;
   opacity:0.9;
 }
 .about-photo-link{
@@ -637,7 +636,7 @@ opacity: 0.3;
   max-height: 400px;
 }
 .red-underline-left{
-  width:3rem;
+  width:6rem;
   height:3px;
   background:var(--mainRed);
   margin-right:auto;
