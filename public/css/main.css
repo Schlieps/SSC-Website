@@ -147,6 +147,9 @@ body{
   .team-photo-container,.about-photo-container{
     max-width:250px;
   }
+  .about-btn{
+    font-size:15px;
+  }
 }
 /* MEDIUM+ 768-991 */
 @media screen and (min-width:768px) and (max-width:991px){
@@ -184,6 +187,9 @@ body{
   .team-photo-container,.about-photo-container{
     max-width:225px;
   }
+  .about-btn{
+    font-size:15px;
+  }
 }
 /* SMALL+ 576-767 */
 @media screen and (min-width:576px) and (max-width:767px){
@@ -215,6 +221,9 @@ body{
   .team-photo-container,.about-photo-container{
     max-width:200px;
   }
+  .about-btn{
+    font-size:15px;
+  }
 }
 /* SMALL- 575- */
 @media screen and (max-width:575px){
@@ -245,6 +254,9 @@ body{
   }
   .team-photo-container,.about-photo-container{
     max-width:200px;
+  }
+  .about-btn{
+    font-size:11px;
   }
 }
 
@@ -321,18 +333,6 @@ body{
     transform: translateY(0px);
     opacity: 1;
   }
-}
-.header-icon{
-    color:var(--mainWhite);
-    transition-property:color;
-    transition-duration:0.3s;
-    transition-timing-function:linear;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
-    font-size:37px;
-}
-.header-icon:hover{
-    color:var(--mainRed);
 }
 .nav-link{
     color:var(--mainWhite);
@@ -427,6 +427,26 @@ body{
   color: var(--mainBlack);
   background: var(--mainWhite);
   border-color: var(--mainWhite);
+  border-radius: 0 !important;
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  text-shadow: none;
+}
+.contact-btn {
+  color: var(--mainBlack);
+  border: 2px solid var(--mainBlack);
+  padding: 15px 45px;
+  background:transparent;
+  border-radius: 0 !important;
+  transition: all 1s;
+  text-transform: uppercase;
+  font-family: 'Conv_Gotham-Book', Sans-Serif;
+  box-shadow:   0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.contact-btn:hover {
+  color: var(--mainWhite);
+  background: var(--mainBlack);
+  border-color: var(--mainBlack);
   border-radius: 0 !important;
   transform: translateY(-7px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
@@ -547,7 +567,6 @@ opacity: 0.7;
     transform:translate(-50%, -50%);
     color:var(--mainBlack);
     font-size:18px;
-    border-bottom:2px solid var(--mainBlack);
     font-family: 'Conv_Gotham-Book', Sans-Serif;
     white-space:nowrap;
     transition:0.2s all ease-in-out;
@@ -561,7 +580,6 @@ opacity: 0.7;
     transform:translate(-50%, -50%);
     color:var(--mainBlack);
     font-size:18px;
-    border-bottom:2px solid var(--mainBlack);
     font-family: 'Conv_Gotham-Book', Sans-Serif;
     white-space:nowrap;
     transition:0.2s all ease-in-out;
@@ -577,7 +595,7 @@ opacity: 0.7;
 .team-photo-container{
   position:relative;
   overflow:hidden;
-  /* background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)); */
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
   transition: 0.2s all ease-in-out;
   margin:0 auto;
   border-radius: 100%;
@@ -606,34 +624,32 @@ opacity: 0.3;
   }
 /* CONTACT SECTION */
 .webp .contact-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/summerBackground.webp) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(../img/summerBackground.webp) center/cover fixed no-repeat;
   min-height: 100vh;
 }
 .no-webp .contact-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/summerBackground.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(../img/summerBackground.jpg) center/cover fixed no-repeat;
   min-height: 100vh;
 }
 .input-style{
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   background:transparent;
-  border-bottom: 2px solid var(--mainWhite);
+  border-bottom: 2px solid var(--mainBlack);
   border-top:none;
   border-left:none;
   border-right:none;
-  padding: 5px 20px;
+  padding: 5px 20px 5px 0px;
   border-radius: 0 !important;
-  font-family: 'Conv_Gotham-Book', Sans-Serif;
-  box-shadow:   0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 .input-style:focus{
   background: rgba(255,255,255, 0.4);
-  color: var(--mainWhite);
+  color: var(--mainBlack);
 }
 #contact-form .form-group input::placeholder{
-  color:var(--mainWhite);
+  color:var(--mainBlack);
 }
 #contact-form .form-group textarea::placeholder{
-  color:var(--mainWhite);
+  color:var(--mainBlack);
 }
 /*EVENTS SECTION*/
 .webp .upcoming-banner {

@@ -1,11 +1,17 @@
 <% include ./partials/header %>
 
-<div class="container">
-    <div class="row full-page text-center">
-        <div class="col-10 m-auto">
-            <h1 class="title3">Thanks for getting in touch <%= data.name %>!</h1>
-            <div class="red-underline"></div>
-            <h1 class="title4">Your email was sent to info@seattlesocialcircle.com. We will reply to you at <%= data.mail %>.</h1>
+<div class="container-fluid">
+    <div class="row full-page-no-pm contact-banner text-center">
+        <div class="col-12 m-auto">
+             <!--	title row-->
+             <div class="row m-match">
+                    <div class="col-12 mx-auto text-center">
+                      <h1 class="title1 my-4">Contact Us</h1>
+                    </div>
+                  </div>
+                  <!--end of title row-->
+            <h1 class="title3">Thanks for getting in touch <%= data.nameFirst %>!</h1>
+            <h1 class="title4">Your message was sent to info@seattlesocialcircle.com.<br>We will reply to you shortly.</h1>
             <a href="/" class="btn page-btn nounderline my-3">Back</a>
         </div>
     </div>

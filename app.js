@@ -15,15 +15,17 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
-app.post("/", urlencodedParser, function(req, res){
+app.post("/contact", urlencodedParser, function(req, res){
     var email = `${req.body.mail}`
     const subject = `${req.body.subject}`
     const message = `
         Contact Details
-            Name: ${req.body.name}
+            First Name: ${req.body.nameFirst}
+            Last Name: ${req.body.nameLast}
             E-mail: ${req.body.mail}
+            Phone #: ${req.body.number}
 
-            ${req.body.message}`
+            Message: ${req.body.message}`
     ;
 
     let transporter = nodemailer.createTransport({
@@ -43,7 +45,7 @@ app.post("/", urlencodedParser, function(req, res){
         from: "seattlesocialcircle@gmail.com",
         to: "info@seattlesocialcircle.com",
         // to: "d.schlieps@gmail.com",
-        subject: subject,
+        subject: "SSC Website Form Submission",
         text: message
     };
 
@@ -67,6 +69,9 @@ app.get("/artists", function(req, res){
     res.render("artists");
 });
 
+app.get("/contact", function(req, res){
+    res.render("contact");
+});
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
     console.log("SSC Server Has Started");
