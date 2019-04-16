@@ -472,8 +472,6 @@ body{
   color:var(--mainWhite);
   transition:0.5s all ease-in-out;
   text-transform: uppercase;
-  border-top:3px solid white;
-  border-bottom:3px solid white;
   padding:10px;
   margin:0;
   text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
@@ -481,7 +479,7 @@ body{
   0px 18px 23px rgba(0,0,0,0.1);
 }
 .about-photo-container:hover .about-photo-link{
-  font-size: 2em;
+  font-size: 1.8em;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
        0px 8px 13px rgba(0,0,0,0.1),
        0px 18px 23px rgba(0,0,0,0.1);
