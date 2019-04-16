@@ -38,6 +38,10 @@ body{
   color:white;
   min-height:100vh;
 }
+.second-black-background{
+  background-color:var(--secondBlack);
+  color:white;
+}
 .snap-container {
   scroll-snap-type: y mandatory;
   scroll-snap-type: mandatory; /* Firefox */  
@@ -51,7 +55,7 @@ body{
 }
 
 .snap-child {
-  scroll-snap-align: start;
+  scroll-snap-align: end;
 }
 .full-page {
   min-height: 100vh;
@@ -723,3 +727,13 @@ opacity: 0.3;
   margin:40px auto;
   position:relative;
 }
+/* FOOTER */
+.footer-icon{
+  color:var(--mainWhite);
+  margin:0 5px;
+  font-size:1.5rem;
+  transition:0.5s all ease-in-out;
+}
+.footer-icon:hover{
+  color:var(--mainRed);
+} 
