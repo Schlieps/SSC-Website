@@ -463,6 +463,7 @@ body{
     border-radius: 0 !important;
     border: 2px solid var(--mainBlack);
     padding: 5px 27px;
+    text-transform: uppercase;
     cursor: pointer;
     transition: all 1s;
     font-family: 'Conv_Gotham-Book', Sans-Serif;
@@ -472,6 +473,23 @@ body{
     color: var(--mainWhite);
     border-radius: 0 !important;
     transform: translateY(-5px);
+}
+.artist-btn{
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  border-radius: 0 !important;
+  border: 2px solid var(--mainWhite);
+  padding: 5px 27px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s;
+  font-family: 'Conv_Gotham-Book', Sans-Serif;
+}
+.artist-btn:hover{
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+  transform: translateY(-5px);
 }
 /*HOME SECTION*/
 .home{
