@@ -687,11 +687,11 @@ opacity: 0.3;
 }
 /*EVENTS SECTION*/
 .webp .upcoming-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/upcomingGOT.webp) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/pastBanner.webp) center/cover fixed no-repeat;
   min-height: 100vh;
 }
 .no-webp .upcoming-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/upcomingGOT.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/pastBanner.jpg) center/cover fixed no-repeat;
   min-height: 100vh;
 }
 .event-p-left{
